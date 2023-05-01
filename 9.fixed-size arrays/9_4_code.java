@@ -1,22 +1,11 @@
-import java.util.Scanner;
 public class Program17ArraysIntro {
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
- 
-        System.out.print("How many grades would you like to input?: ");
-        int numOfPhysicsGrades=input.nextInt();
- 
         // We are initializing the physics grades of a student
-        double[] physicsGrades=new double[numOfPhysicsGrades];
+        double[] physicsGrades={12,16,14,10,19,18};
  
-        for (int i=0;i<=numOfPhysicsGrades-1;i++){
-            System.out.printf("Grade[%d] : ",i); // Grade[0] : Grad[1]:
-            physicsGrades[i]=input.nextDouble();
-        }
- 
- 
- 
- 
+        
+        int numOfPhysicsGrades=physicsGrades.length;
+        
         // We display the grades from the array
         for(int i=0;i<=numOfPhysicsGrades-1;i++){
             System.out.println(physicsGrades[i]);
